@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Big Shoulders Display;
+    src: url(./fonts/BigShouldersDisplay-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Lexen Deca;
+    src: url(./fonts/LexendDeca-VariableFont_wght.ttf);
+}
+
+body {
+    background-color: hsl(0, 0%, 95%);
+    line-height: 1.5;
+}
+
+main {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.div1 {
+    background-color: hsl(31, 77%, 52%);
+    padding: 20px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    width: 100%;
+}
+
+.div1 h1 {
+    font-family: Big Shoulders Display;
+    font-weight: 700;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: hsl(0, 0%, 95%);
+    text-indent: 1.5;
+}
+
+.div1 p {
+    font-family: Lexen Deca;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+.div1 button {
+    color: hsl(31, 77%, 52%);
+}
+
+.div1 button:hover {
+    background-color: hsl(31, 77%, 52%);
+    color: hsl(0, 0%, 95%);
+    transition: 0.3s;
+    border: 2px;
+    border-color: hsl(0, 0%, 95%);
+    border-style: groove;
+    cursor: pointer;
+}
+
+.div2 {
+    background-color: hsl(184, 100%, 22%);
+    padding: 20px;
+    border-radius: 0;
+    width: 100%;
+}
+
+.div2 h1 {
+    font-family: Big Shoulders Display;
+    font-weight: 700;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: hsl(0, 0%, 95%);
+    text-indent: 1.5;
+}
+
+.div2 p {
+    font-family: Lexen Deca;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+.div2 button {
+    color: hsl(184, 100%, 22%);
+}
+
+.div2 button:hover {
+    background-color: hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%);
+    transition: 0.3s;
+    border: 2px;
+    border-color: hsl(0, 0%, 95%);
+    border-style: groove;
+    cursor: pointer;
+}
+
+.div3 {
+    background-color: hsl(179, 100%, 13%);
+    padding: 20px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 100%;
+}
+
+.div3 h1 {
+    font-family: Big Shoulders Display;
+    font-weight: 700;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: hsl(0, 0%, 95%);
+    text-indent: 1.5;
+}
+
+.div3 p {
+    font-family: Lexen Deca;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    font-weight:normal;
+}
+
+.div3 button {
+    color: hsl(179, 100%, 13%);
+}
+
+.div3 button:hover {
+    background-color: hsl(179, 100%, 13%);
+    color: hsl(0, 0%, 95%);
+    transition: 0.3s;
+    border: 2px;
+    border-color: hsl(0, 0%, 95%);
+    border-style: groove;
+    cursor: pointer;
+}
+
+button {
+    background-color: hsl(0, 0%, 95%);
+    padding: 10px;
+    border-radius: 40px;
+    border: 0;
+    width: 70%;
+}
+
+@media (max-width: 1440px) {
+    main {
+        width: 50%;
+        flex-direction: row;
+    }
+
+    .div1{
+        flex: 50%;
+    } 
+    
+    .div2{
+        flex: 50%;
+    } 
+    
+    .div3{
+        flex: 100%;
+    }
+    
+}
+
+@media (max-width: 375px) {
+    main {
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .div1{
+        flex: 50%;
+    } 
+    
+    .div2{
+        flex: 50%;
+    } 
+    
+    .div3{
+        flex: 100%;
+    }
+    
+}
